@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số kí tự chung giữa 2 chuỗi</title>
+</head>
+<body>
+<script>
+    let s1 = "aabcc";
+    let s2 = "adcaa";
+    function solution(s1,s2) {
+        let arrs1 = s1.split("");
+        let arrs2 = s2.split("");
+        let count = 0;
+        for (let i = 0; i< arrs1.length;i++) {
+            let index = arrs2.indexOf(arrs1[i])
+            if (index !== -1) {
+                count++;
+                arrs2[index] = "0";
+            }
+        }
+        return count ;
+
+    }
+    let result = solution(s1,s2);
+    console.log(result)
+</script>
+
+</body>
+</html>

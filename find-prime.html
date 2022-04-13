@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function findPrime(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true
+    }
+    function findNumber() {
+        let n = 1000;
+        let i = 2;
+        while (i<=n){
+            if(findPrime(i)){
+                document.write(i+",")
+            }
+            i++;
+        }
+
+    }
+    findNumber()
+
+
+
+</script>
+
+</body>
+</html>

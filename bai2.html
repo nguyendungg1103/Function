@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập trên slack</title>
+</head>
+<body>
+<script>
+let arr = ["abaa", "ab", "ad", "vcd", "aha"];
+let length1 = 0;
+for (let i = 0; i < arr.length; i++) {
+if (arr[i].length > length1) {
+length1 = arr[i].length;
+}
+}
+let arr1 = [];
+for (let i = 0; i < arr.length; i++) {
+if (arr[i].length == length1) {
+arr1.push(arr[i]);
+}
+}
+console.log(arr1);
+</script>
+
+</body>
+</html>
